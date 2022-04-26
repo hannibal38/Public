@@ -5,37 +5,56 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace ClassLibrary
-{
+
+namespace ClassLibrary {
 
     //string variable for Log output path
+    /// <summary>
+    /// set commonlib's var
+    /// </summary>
     public struct CommonSetting {
+        /// <summary>
+        /// set log filename
+        /// </summary>
         public static string LogFilePath;
+        /// <summary>
+        /// DebugFlag. default:false
+        /// </summary>
+        public static Boolean DebugFlag = false;
     }
 
 
+    /// <summary>
+    /// 
+    /// </summary>
     public class CommonLibrary {
 
 
         /// <summary>
-        /// Get value from ini(FilePath), by Key.
+        /// Get value from ini by Key. default filepath=settings.ini
+        /// 20220426 Added: Skip comment line
         /// </summary>
         /// <param name="Key">Search Key</param>
-        /// <param name="FilePath">Location of settingfile</param>
+        /// <param name="FilePath">Location of settingfile @"\settings.ini"</param>
         /// <returns>key-value or null</returns>
         public string LoadINI(string Key, string FilePath = @"\settings.ini") {
 
 
             FilePath = Directory.GetCurrentDirectory() + FilePath;
-            
+
             try {
                 using (StreamReader sr = new StreamReader(FilePath)) {
                     string line;
                     while ((line = sr.ReadLine()) != null) {
-                        if (line.ToLower().Contains(Key.ToLower())) {
-                            string[] ReturnString = line.Split(new char[] { '=' });
-                            WriteLog(0, "LoadINI(" + Key + ") => " + ReturnString[1]);
-                            return ReturnString[1];
+                        if (line.Substring(0, 2) == "//") {
+
+                        }
+                        else {
+                            if (line.ToLower().Contains(Key.ToLower())) {
+                                string[] ReturnString = line.Split(new char[] { '=' });
+                                WriteLog(0, "LoadINI(" + Key + ") => " + ReturnString[1]);
+                                return ReturnString[1];
+                            }
                         }
                     }
                 }
@@ -49,6 +68,11 @@ namespace ClassLibrary
             return null;
         }
 
+        /// <summary>
+        /// byte to KB,MB,GB
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         public string CastToGiga(long args) {
 
             decimal Lower = args / 1024;
@@ -66,11 +90,16 @@ namespace ClassLibrary
             Lower /= 1024;
 
             return Math.Round(Lower, 2, MidpointRounding.AwayFromZero) + "GB";
-           
+
         }
 
 
 
+        /// <summary>
+        /// write log to file
+        /// </summary>
+        /// <param name="level"></param>
+        /// <param name="message"></param>
         public void WriteLog(int level, string message) {
             string LogFilePath = CommonSetting.LogFilePath;
             string LogLevel = "";
@@ -94,7 +123,7 @@ namespace ClassLibrary
             }
 
             Console.WriteLine(DateTime.Now.ToString("HH:mm:ss") + "\t" + LogLevel + "\t" + message);
-            
+
             if (Directory.Exists(LogFilePath) == false) {
                 Directory.CreateDirectory(LogFilePath);
             }
@@ -125,14 +154,42 @@ namespace ClassLibrary
             Console.ForegroundColor = ConsoleColor.White;
         }
 
+        /// <summary>
+        /// terminate application
+        /// </summary>
+        /// <param name="msg"></param>
         public void Terminate(string msg) {
-            WriteLog(1,"Terminate function: " + msg);
+            WriteLog(1, "Terminate: " + msg);
+            Environment.Exit(0);
         }
+
+        /// <summary>
+        /// Terminate application with exitcode
+        /// </summary>
+        /// <param name="msg"></param>
+        /// <param name="exitcode"></param>
+        public void Terminate(string msg, int exitcode) {
+            WriteLog(1, "Terminate: " + msg);
+            Environment.Exit(exitcode);
+        }
+
+        /// <summary>
+        /// Terminate application with ArrayList
+        /// </summary>
+        /// <param name="al">Msg Array</param>
+        public void Terminate(ArrayList al) {
+            WriteLog(1, "Terminate with ArrayList");
+            int lines = 0;
+            foreach (var d in al)
+                WriteLog(0, ++lines +  ": " + d.ToString());
+            Environment.Exit(0);
+        }
+
 
         /// <summary>
         /// (대리)쉘을 실행하고 ExitCode를 리턴
         /// </summary>
-        /// <param name="Args">실행명령어</param
+        /// <param name="Args">실행명령어</param>
         /// <returns>int ExitCode리턴</returns>
         public int ExecuteShellReturnExitCode(string Args) {
 
@@ -150,7 +207,7 @@ namespace ClassLibrary
 
             //string[] ExecuteResult = ReturnArray.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
 
-            ///* Code Meaning 
+            //* Code Meaning 
             //*0 No error 
             //*1 Warning (Non fatal error(s)). For example, one or more files were locked by some other application, so they were not compressed. 
             //*2 Fatal error 
@@ -177,12 +234,12 @@ namespace ClassLibrary
         /// <summary>
         /// 실제로 명령어를 받아 실행
         /// </summary>
-        /// <param name="args">실행 명령어</param>
-        /// <param name="ExitCode">리턴int ExitCode</1param>
+        /// <param name="Args">실행 명령어</param>
+        /// <param name="ExitCode">리턴int ExitCode</param>
         /// <param name="ResultArray">리턴str ResultArray</param>
         public void ExecuteShellRoutine
             (string Args, out int ExitCode, out string ResultArray) {
-
+            Boolean DebugFlag = CommonSetting.DebugFlag;
             System.Diagnostics.Process p = new System.Diagnostics.Process();
 
             p.StartInfo.FileName = System.Environment.GetEnvironmentVariable("ComSpec");
@@ -191,7 +248,8 @@ namespace ClassLibrary
             p.StartInfo.RedirectStandardInput = false;
             p.StartInfo.CreateNoWindow = true;
             p.StartInfo.Arguments = @"/c " + Args;
-
+            if (DebugFlag == true)
+                WriteLog(0, "Execute args: " + p.StartInfo.Arguments);
             try {
                 p.Start();
             }
@@ -201,6 +259,9 @@ namespace ClassLibrary
                 ExitCode = -1;
             }
             ResultArray = p.StandardOutput.ReadToEnd();
+            if (DebugFlag == true)
+                WriteLog(0, "Output: " + ResultArray);
+
             ExitCode = p.ExitCode;
 
             p.WaitForExit();
