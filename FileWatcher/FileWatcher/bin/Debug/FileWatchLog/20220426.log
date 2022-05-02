@@ -1,0 +1,491 @@
+14:23:12	Info	LoadINI(Pattern) => [0-9]{3}.20[0-9]{2}.[0-9]3
+14:23:12	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:23:20	Info	LoadINI(Pattern) => [0-9]{3}.20[0-9]{2}.[0-9]3
+14:23:20	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:24:19	Info	LoadINI(Pattern) => [0-9]{3}.20[0-9]{2}.[0-9]3
+14:24:19	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:24:55	Info	LoadINI(Pattern) => [0-9]{3}.20[0-9]{2}.[0-9]3
+14:24:55	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:25:04	Info	LoadINI(Pattern) => [0-9]{3}.20[0-9]{2}.[0-9]3
+14:25:04	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:25:28	Info	LoadINI(Pattern) => [0-9]{3}.20[0-9]{2}.[0-9]3
+14:25:28	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:25:34	Info	LoadINI(Pattern) => [0-9]{3}.20[0-9]{2}.[0-9]3
+14:25:34	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:26:29	Info	LoadINI(Pattern) => [0-9]{3}.20[0-9]{2}.[0-9]3
+14:26:29	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:26:43	Info	LoadINI(Pattern) => [0-9]{3}.20[0-9]{2}.[0-9]3
+14:26:43	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:26:50	Info	LoadINI(Pattern) => [0-9]{3}.20[0-9]{2}.[0-9]3
+14:26:50	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:27:45	Info	LoadINI(Pattern) => [0-9]{3}.^20[0-9]{2}.[0-9]3
+14:27:45	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:28:08	Info	LoadINI(Pattern) => [0-9]{3}.[0-9]{4}.[0-9]3
+14:28:08	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:28:23	Info	LoadINI(SearchPattern) => [0-9]{3}.[0-9]{4}.[0-9]3
+14:28:23	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:28:29	Info	LoadINI(SearchPattern) => [0-9]{3}.[0-9]{4}.[0-9]3
+14:28:29	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:28:53	Info	LoadINI(SearchPattern) => [0-9]{3}.[0-9]{4}.[0-9]3
+14:28:53	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:29:00	Info	LoadINI(SearchPattern) => [0-9]{3}.[0-9]{4}.[0-9]3
+14:29:00	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:29:16	Info	LoadINI(SearchPattern) => [0-9]{3}.[0-9]{4}.[0-9]{3}
+14:29:16	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:31:25	Info	LoadINI(SearchPattern) => [0-9]{3,3}.[0-9]{4,4}.[0-9]{3,3}
+14:31:25	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:32:57	Info	LoadINI(SearchPattern) => [0-9]{3}
+14:32:57	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:33:23	Info	LoadINI(SearchPattern) => [0-9]{3}
+14:33:23	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:33:36	Info	LoadINI(SearchPattern) => [0-9]{3,3}
+14:33:36	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:35:16	Info	LoadINI(SearchPattern) => [0-9]{3}
+14:35:16	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:38:21	Info	LoadINI(SearchPattern) => [0-9]{3}
+14:38:21	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:39:12	Info	LoadINI(SearchPattern) => [0-9]{3}
+14:39:12	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:40:47	Info	LoadINI(SearchPattern) => ^[0-9]{3}
+14:40:47	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:41:57	Info	LoadINI(SearchPattern) => ^[0-9]{3}
+14:41:57	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:42:14	Info	LoadINI(SearchPattern) => ^[0-9]{3}
+14:42:14	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:44:30	Info	LoadINI(SearchPattern) => ^[0-9]{3}
+14:44:30	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:45:21	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}
+14:45:21	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:46:13	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}
+14:46:13	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:46:37	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+14:46:37	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:47:51	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+14:47:51	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:56:22	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+14:56:22	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:56:22	Info	Match! 200.2022.124
+14:59:17	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+14:59:17	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+14:59:17	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+14:59:17	Info	Match! 200.2022.124
+15:00:18	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:00:18	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:00:18	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:00:18	Info	Match! 200.2022.124
+15:00:18	Info	Executed result: 777
+15:01:24	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:01:24	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:01:24	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:01:24	Info	Match! 200.2022.124
+15:01:39	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:01:39	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:01:39	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:01:39	Info	Match! 200.2022.124
+15:01:39	Info	Executed result: 777
+15:01:55	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:01:55	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:01:55	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:01:56	Info	Match! 200.2022.124
+15:02:33	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:02:33	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:02:33	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:02:33	Info	Match! 200.2022.124
+15:04:32	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:04:32	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:04:32	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:04:32	Info	Match! 200.2022.124
+15:04:38	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:04:38	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:04:38	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:04:38	Info	Match! 200.2022.124
+15:04:38	Info	Executed result: 777
+15:04:56	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:04:56	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:04:56	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:04:56	Info	Match! 200.2022.124
+15:04:56	Info	Executed result: 777
+15:09:12	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:09:12	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:09:12	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:09:12	Info	Match! 200.2022.124
+15:10:08	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:10:08	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:10:08	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:10:08	Info	Match! 200.2022.124
+15:10:13	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:10:13	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:10:13	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:10:13	Info	Match! 200.2022.124
+15:10:14	Info	Executed result: 777
+15:10:43	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:10:43	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:10:43	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:10:43	Info	Match! 200.2022.124
+15:10:43	Info	Executed result: 777
+15:11:04	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:11:04	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:11:04	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:11:04	Info	Match! 200.2022.124
+15:11:04	Info	Executed result: 777
+15:11:13	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:11:13	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:11:13	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:11:13	Info	Match! 200.2022.124
+15:11:13	Info	Executed result: 777
+15:11:28	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:11:28	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:11:28	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:11:28	Info	Match! 200.2022.124
+15:11:51	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:11:51	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:11:51	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:11:51	Info	Match! 200.2022.124
+15:12:25	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:12:25	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:12:25	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:12:25	Info	Match! 200.2022.124
+15:12:32	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:12:32	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:12:32	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:12:32	Info	Match! 200.2022.124
+15:12:32	Info	Executed result: 777
+15:13:17	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:13:17	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:13:17	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:13:17	Info	Match! 200.2022.124
+15:13:17	Info	Executed result: 777
+15:13:36	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:13:36	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:13:36	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:13:36	Info	Match! 200.2022.124
+15:13:36	Info	Executed result: 777
+15:13:46	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:13:46	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:13:46	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:13:46	Info	Match! 200.2022.124
+15:13:46	Info	Executed result: 777
+15:16:15	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:16:15	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:16:15	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:16:15	Info	Match! 200.2022.124
+15:16:15	Info	Executed result: 777
+15:16:23	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:16:23	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:16:23	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:16:23	Info	Match! 200.2022.124
+15:16:23	Info	Executed result: 777
+15:16:33	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+15:16:33	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+15:16:33	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+15:16:33	Info	Match! 200.2022.124
+16:45:04	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+16:45:04	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+16:45:04	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+16:45:04	Info	Match! 200.2022.124
+16:45:04	Info	Execute args: /c C:\dev\temp_filewatch\run.bat asdf
+16:45:04	Info	Output: 
+16:45:04	Info	Executed result: 777
+16:45:15	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+16:45:15	Info	LoadINI(SourceDirectory) => C:\dev\temp_filewatch
+16:45:15	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+16:45:15	Info	Match! 200.2022.124
+16:45:15	Info	Execute args: /c C:\dev\temp_filewatch\run.bat asdf
+16:45:15	Info	Output: 
+16:45:15	Info	Executed result: 777
+17:21:09	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+17:21:09	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+17:21:09	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+17:21:09	Info	LoadINI(ObjectKind) => 1
+17:21:09	Info	LoadINI(ObjectCount) => 3
+17:21:38	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+17:21:38	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+17:21:38	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+17:21:38	Info	LoadINI(ObjectKind) => 1
+17:21:38	Info	LoadINI(ObjectCount) => 3
+17:22:23	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+17:22:23	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+17:22:23	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+17:22:23	Info	LoadINI(ObjectKind) => 1
+17:22:23	Info	LoadINI(ObjectCount) => 3
+17:22:35	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+17:22:35	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+17:22:35	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+17:22:35	Info	LoadINI(ObjectKind) => 2
+17:22:35	Info	LoadINI(ObjectCount) => 3
+17:50:48	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+17:50:48	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+17:50:48	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+17:50:48	Info	LoadINI(ObjectKind) => 2
+17:50:58	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+17:50:58	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+17:50:58	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+17:50:58	Info	LoadINI(ObjectKind) => 1
+17:52:23	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+17:52:23	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+17:52:23	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+17:52:23	Info	LoadINI(ObjectKind) => 1
+18:30:59	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+18:30:59	Info	LoadINI(ObjectKind) => 1
+18:31:20	Action	Created: C:\dev\temp_filewatch\aslkmfdalskdm
+18:31:20	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+18:31:20	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+18:31:20	Info	CheckSourceFolder(aslkmfdalskdm) is not Matched.
+18:31:32	Action	Created: C:\dev\temp_filewatch\aslkmfdalskdm1
+18:31:32	Info	CheckSourceFolder(aslkmfdalskdm1) is not Matched.
+18:31:48	Action	Created: C:\dev\temp_filewatch\aslkmfdalskdm1qsdfqaw
+18:31:48	Info	CheckSourceFolder(aslkmfdalskdm1qsdfqaw) is not Matched.
+18:31:55	Action	Created: C:\dev\temp_filewatch\200.3441.6513256
+18:31:55	Info	CheckSourceFolder(200.3441.6513256) is not Matched.
+18:32:02	Action	Created: C:\dev\temp_filewatch\151.141.3256
+18:32:02	Info	CheckSourceFolder(151.141.3256) is not Matched.
+18:32:08	Action	Created: C:\dev\temp_filewatch\151.1451.3256
+18:32:08	Info	CheckSourceFolder(151.1451.3256) is not Matched.
+18:32:11	Action	Created: C:\dev\temp_filewatch\151.14651.3256
+18:32:11	Info	CheckSourceFolder(151.14651.3256) is not Matched.
+18:32:21	Action	Created: C:\dev\temp_filewatch\151.1351.3256
+18:32:21	Info	CheckSourceFolder(151.1351.3256) is not Matched.
+18:32:22	Action	Created: C:\dev\temp_filewatch\151.1351.325
+18:32:22	Info	Match! 151.1351.325
+18:32:22	Info	Execute args: /c C:\dev\temp_filewatch\run.bat
+18:32:22	Info	Output: 
+18:32:22	Info	Executed result: 777
+18:32:44	Action	Created: C:\dev\temp_filewatch\151.1351.325e
+18:32:44	Info	CheckSourceFolder(151.1351.325e) is not Matched.
+18:32:46	Action	Created: C:\dev\temp_filewatch\151.1351.35e
+18:32:46	Info	CheckSourceFolder(151.1351.35e) is not Matched.
+18:32:48	Action	Created: C:\dev\temp_filewatch\151.1351.12335e
+18:32:48	Info	CheckSourceFolder(151.1351.12335e) is not Matched.
+18:32:50	Action	Created: C:\dev\temp_filewatch\151.1351.1e
+18:32:50	Info	CheckSourceFolder(151.1351.1e) is not Matched.
+18:32:53	Action	Created: C:\dev\temp_filewatch\151.1351.3123
+18:32:53	Info	CheckSourceFolder(151.1351.3123) is not Matched.
+18:32:55	Action	Created: C:\dev\temp_filewatch\151.1351.312
+18:32:55	Info	Match! 151.1351.312
+18:32:55	Info	Execute args: /c C:\dev\temp_filewatch\run.bat
+18:32:55	Info	Output: 
+18:32:55	Info	Executed result: 777
+18:33:50	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+18:33:50	Info	LoadINI(ObjectKind) => 1
+18:33:57	Action	Created: C:\dev\temp_filewatch\151.1351.31a
+18:33:57	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+18:33:57	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+18:33:57	Info	CheckSourceFolder(151.1351.31a) is not Matched.
+18:33:59	Action	Created: C:\dev\temp_filewatch\151.1351.3123123
+18:33:59	Info	CheckSourceFolder(151.1351.3123123) is not Matched.
+18:34:05	Action	Created: C:\dev\temp_filewatch\1.log
+18:34:05	Info	CheckSourceFolder(1.log) is not Matched.
+18:47:48	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+18:47:48	Info	LoadINI(ObjectKind) => 1
+18:48:08	Action	Created: C:\dev\temp_filewatch\새 폴더 (4)
+18:48:08	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+18:48:08	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+18:48:08	Info	CheckSourceFolder(새 폴더 (4)) is not Matched.
+18:48:14	Action	Renamed: 새 폴더 (4) => 333.2222.221
+18:48:14	Info	Match! 333.2222.221
+18:48:26	Info	Execute args: /c C:\dev\temp_filewatch\run.bat
+18:48:26	Info	Output: 
+18:48:26	Info	Executed result: 777
+18:49:48	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+18:49:48	Info	LoadINI(ObjectKind) => 1
+18:50:00	Action	Created: C:\dev\temp_filewatch\새 폴더 (4)
+18:50:00	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+18:50:00	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+18:50:00	Info	CheckSourceFolder(새 폴더 (4)) is not Matched.
+18:50:03	Action	Renamed: 새 폴더 (4) => 333.2212.221
+18:50:03	Info	Match! 333.2212.221
+18:50:16	Info	Execute args: /c C:\dev\temp_filewatch\run.bat
+18:50:16	Info	Output: 
+18:50:16	Info	Executed result: 777
+18:50:29	Action	Renamed: 333.2212.221 => 333.2112.221
+18:50:29	Info	Match! 333.2112.221
+18:50:54	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+18:50:54	Info	LoadINI(ObjectKind) => 1
+18:50:59	Action	Renamed: 333.2112.221 => 333.0112.221
+18:50:59	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+18:50:59	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+18:50:59	Info	Match! 333.0112.221
+18:51:18	Info	Execute args: /c C:\dev\temp_filewatch\run.bat
+18:51:18	Info	Output: 
+18:51:18	Info	Executed result: 777
+18:51:44	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+18:51:44	Info	LoadINI(ObjectKind) => 1
+18:51:50	Action	Renamed: 333.0112.221 => 333.9112.221
+18:51:50	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+18:51:50	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+18:51:50	Info	Match! 333.9112.221
+18:52:17	Info	Execute args: /c C:\dev\temp_filewatch\run.bat
+18:52:17	Info	Output: 
+18:52:17	Info	Executed result: 777
+19:06:53	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+19:06:53	Info	LoadINI(ObjectKind) => 1
+19:07:03	Action	Renamed: 200.122.12412315 => 200.122.1245
+19:07:03	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+19:07:03	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+19:07:03	Info	CheckSourceFolder(200.122.1245) is not Matched.
+19:07:13	Action	Created: C:\dev\temp_filewatch\새 폴더 (4)
+19:07:13	Info	CheckSourceFolder(새 폴더 (4)) is not Matched.
+19:07:18	Action	Renamed: 새 폴더 (4) => 123.1234.123
+19:07:18	Info	Match! 123.1234.123
+19:07:29	Info	Execute args: /c C:\dev\temp_filewatch\run.bat
+19:07:29	Info	Output: 0개 파일이 복사되었습니다.
+
+19:07:29	Info	Executed result: 0
+19:07:38	Action	Created: C:\dev\temp_filewatch\새 폴더 (4)
+19:07:38	Info	CheckSourceFolder(새 폴더 (4)) is not Matched.
+19:07:39	Action	Renamed: 새 폴더 (4) => 123.1234.125
+19:07:39	Info	Match! 123.1234.125
+19:08:03	Info	Execute args: /c C:\dev\temp_filewatch\run.bat
+19:08:03	Info	Output: 0개 파일이 복사되었습니다.
+
+19:08:03	Info	Executed result: 0
+19:08:38	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+19:08:38	Info	LoadINI(ObjectKind) => 1
+19:08:47	Action	Renamed: 123.1234.125 => 123.1234.126
+19:08:47	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+19:08:47	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+19:08:47	Info	Match! 123.1234.126
+19:08:59	Info	Execute args: /c C:\dev\temp_filewatch\run.bat123.1234.126
+19:08:59	Info	Output: 
+19:08:59	Info	Executed result: 1
+19:09:20	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+19:09:20	Info	LoadINI(ObjectKind) => 1
+19:09:26	Action	Renamed: 123.1234.126 => 123.1234.127
+19:09:26	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+19:09:26	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+19:09:26	Info	Match! 123.1234.127
+19:09:38	Info	Execute args: /c C:\dev\temp_filewatch\run.bat 123.1234.127
+19:09:38	Info	Output: 0개 파일이 복사되었습니다.
+
+19:09:38	Info	Executed result: 4
+19:10:29	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+19:10:29	Info	LoadINI(ObjectKind) => 1
+19:10:33	Action	Renamed: 123.1234.127 => 123.1234.128
+19:10:33	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+19:10:33	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+19:10:33	Info	Match! 123.1234.128
+19:10:46	Info	Execute args: /c C:\dev\temp_filewatch\run.bat 123.1234.128
+19:10:46	Info	Output: 0개 파일이 복사되었습니다.
+
+19:10:46	Info	Executed result: 4
+19:12:18	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+19:12:18	Info	LoadINI(ObjectKind) => 1
+19:12:31	Action	Renamed: 123.1234.128 => 123.1234.129
+19:12:31	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+19:12:31	Info	LoadINI(ExecutePath) => C:\dev\temp_filewatch\run.bat
+19:12:31	Info	Match! 123.1234.129
+19:12:43	Info	Execute args: /c C:\dev\temp_filewatch\run.bat 123.1234.129
+19:12:43	Info	Output: 
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Windows용 견고한 파일 복사                              
+-------------------------------------------------------------------------------
+
+  시작됨: 2022년 4월 26일 화요일 오후 7:12:43
+        원본 : C:\dev\CSharpPublic\FileWatcher\FileWatcher\bin\Debug\123.1234.129\
+        대상 : C:\dev\temp_log\123.1234.129\
+
+        파일 : *.*
+	    
+        옵션 : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+2022/04/26 19:12:43 오류 2 (0x00000002) 원본 디렉터리에 액세스하는 중 C:\dev\CSharpPublic\FileWatcher\FileWatcher\bin\Debug\123.1234.129\
+지정된 파일을 찾을 수 없습니다.
+
+19:12:43	Info	Executed result: 16
+19:14:06	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+19:14:06	Info	LoadINI(ObjectKind) => 1
+19:14:41	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+19:14:41	Info	LoadINI(ObjectKind) => 1
+19:15:00	Action	Renamed: 123.1234.123 => 123.1234.121
+19:15:00	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+19:15:00	Info	LoadINI(ExecutePath) => C:\dev\CSharpPublic\FileWatcher\FileWatcher\bin\Debug\run.bat
+19:15:00	Info	Match! 123.1234.121
+19:15:19	Info	Execute args: /c C:\dev\CSharpPublic\FileWatcher\FileWatcher\bin\Debug\run.bat C:\dev\temp_filewatch\123.1234.121
+19:15:19	Info	Output: 
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Windows용 견고한 파일 복사                              
+-------------------------------------------------------------------------------
+
+  시작됨: 2022년 4월 26일 화요일 오후 7:15:19
+        원본 : C:\dev\temp_filewatch\123.1234.121\
+        대상 : C:\dev\temp_log\C:\dev\temp_filewatch\123.1234.121\
+
+        파일 : *.*
+	    
+        옵션 : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+2022/04/26 19:15:19 오류 123 (0x0000007B) 대상 디렉터리에 액세스하는 중 C:\dev\temp_log\C:\dev\temp_filewatch\123.1234.121\
+파일 이름, 디렉터리 이름 또는 볼륨 레이블 구문이 잘못되었습니다.
+
+19:15:19	Info	Executed result: 16
+19:17:07	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+19:17:07	Info	LoadINI(ObjectKind) => 1
+19:17:13	Action	Renamed: 123.1234.121 => 123.1234.133
+19:17:13	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+19:17:13	Info	LoadINI(ExecutePath) => C:\dev\CSharpPublic\FileWatcher\FileWatcher\bin\Debug\run.bat
+19:17:13	Info	Match! 123.1234.133
+19:17:25	Info	Execute args: /c C:\dev\CSharpPublic\FileWatcher\FileWatcher\bin\Debug\run.bat 123.1234.133
+19:17:25	Info	Output: 
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Windows용 견고한 파일 복사                              
+-------------------------------------------------------------------------------
+
+  시작됨: 2022년 4월 26일 화요일 오후 7:17:25
+        원본 : C:\dev\CSharpPublic\FileWatcher\FileWatcher\bin\Debug\123.1234.133\
+        대상 : C:\dev\temp_log\123.1234.133\
+
+        파일 : *.*
+	    
+        옵션 : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+2022/04/26 19:17:25 오류 2 (0x00000002) 원본 디렉터리에 액세스하는 중 C:\dev\CSharpPublic\FileWatcher\FileWatcher\bin\Debug\123.1234.133\
+지정된 파일을 찾을 수 없습니다.
+
+19:17:25	Info	Executed result: 16
+19:18:25	Info	LoadINI(SourcePath) => C:\dev\temp_filewatch
+19:18:25	Info	LoadINI(ObjectKind) => 1
+19:18:36	Action	Renamed: 123.1234.129 => 123.1234.151
+19:18:36	Info	LoadINI(SearchPattern) => ^[0-9]{3}.[0-9]{4}.[0-9]{3}$
+19:18:36	Info	LoadINI(ExecutePath) => C:\dev\CSharpPublic\FileWatcher\FileWatcher\bin\Debug\run.bat
+19:18:36	Info	Match! 123.1234.151
+19:18:48	Info	Execute args: /c C:\dev\CSharpPublic\FileWatcher\FileWatcher\bin\Debug\run.bat 123.1234.151
+19:18:48	Info	Output: 
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Windows용 견고한 파일 복사                              
+-------------------------------------------------------------------------------
+
+  시작됨: 2022년 4월 26일 화요일 오후 7:18:48
+        원본 : C:\dev\temp_filewatch\123.1234.151\
+        대상 : C:\dev\temp_log\123.1234.151\
+
+        파일 : *.*
+	    
+        옵션 : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	새 디렉터리        2	C:\dev\temp_filewatch\123.1234.151\
+	    새 파일   		    1460	1.log100%  
+	    새 파일   		    1460	2.log100%  
+
+------------------------------------------------------------------------------
+
+                  전체       복사됨      건너 뜀       불일치        실패        추가
+    디렉터리 :         1         1         0         0         0         0
+      파일 :         2         2         0         0         0         0
+     바이트 :     2.8 k     2.8 k         0         0         0         0
+      시간 :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+      속도 :             1460000 바이트/초
+      속도 :              83.541 메가바이트/분
+   종료됨: 2022년 4월 26일 화요일 오후 7:18:48
+
+
+19:18:48	Info	Executed result: 1

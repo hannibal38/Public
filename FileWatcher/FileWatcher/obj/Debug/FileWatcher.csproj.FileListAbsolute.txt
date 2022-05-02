@@ -1,0 +1,10 @@
+C:\dev\CSharpPublic\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe.config
+C:\dev\CSharpPublic\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+C:\dev\CSharpPublic\FileWatcher\FileWatcher\bin\Debug\FileWatcher.pdb
+C:\dev\CSharpPublic\FileWatcher\FileWatcher\bin\Debug\ClassLibrary.dll
+C:\dev\CSharpPublic\FileWatcher\FileWatcher\bin\Debug\ClassLibrary.pdb
+C:\dev\CSharpPublic\FileWatcher\FileWatcher\bin\Debug\ClassLibrary.xml
+C:\dev\CSharpPublic\FileWatcher\FileWatcher\obj\Debug\FileWatcher.csproj.CoreCompileInputs.cache
+C:\dev\CSharpPublic\FileWatcher\FileWatcher\obj\Debug\FileWatcher.csproj.CopyComplete
+C:\dev\CSharpPublic\FileWatcher\FileWatcher\obj\Debug\FileWatcher.exe
+C:\dev\CSharpPublic\FileWatcher\FileWatcher\obj\Debug\FileWatcher.pdb

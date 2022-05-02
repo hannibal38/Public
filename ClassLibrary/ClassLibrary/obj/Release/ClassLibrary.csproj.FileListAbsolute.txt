@@ -1,0 +1,5 @@
+D:\dev\C_sharp\ClassLibrary\ClassLibrary\bin\Release\ClassLibrary.dll
+D:\dev\C_sharp\ClassLibrary\ClassLibrary\bin\Release\ClassLibrary.pdb
+D:\dev\C_sharp\ClassLibrary\ClassLibrary\obj\Release\ClassLibrary.csproj.CoreCompileInputs.cache
+D:\dev\C_sharp\ClassLibrary\ClassLibrary\obj\Release\ClassLibrary.dll
+D:\dev\C_sharp\ClassLibrary\ClassLibrary\obj\Release\ClassLibrary.pdb

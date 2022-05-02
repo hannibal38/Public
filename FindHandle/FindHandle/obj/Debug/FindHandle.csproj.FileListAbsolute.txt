@@ -1,0 +1,7 @@
+C:\dev\CSharpPublic\FindHandle\FindHandle\bin\Debug\FindHandle.exe.config
+C:\dev\CSharpPublic\FindHandle\FindHandle\bin\Debug\FindHandle.exe
+C:\dev\CSharpPublic\FindHandle\FindHandle\bin\Debug\FindHandle.pdb
+C:\dev\CSharpPublic\FindHandle\FindHandle\obj\Debug\FindHandle.csproj.CoreCompileInputs.cache
+C:\dev\CSharpPublic\FindHandle\FindHandle\obj\Debug\FindHandle.exe
+C:\dev\CSharpPublic\FindHandle\FindHandle\obj\Debug\FindHandle.pdb
+C:\dev\CSharpPublic\FindHandle\FindHandle\obj\Debug\FindHandle.csprojAssemblyReference.cache

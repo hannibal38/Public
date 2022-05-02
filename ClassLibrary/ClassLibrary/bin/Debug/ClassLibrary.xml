@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:ClassLibrary.CommonSetting">
+            <summary>
+            set commonlib's var
+            </summary>
+        </member>
+        <member name="F:ClassLibrary.CommonSetting.LogFilePath">
+            <summary>
+            set log filename
+            </summary>
+        </member>
+        <member name="F:ClassLibrary.CommonSetting.DebugFlag">
+            <summary>
+            DebugFlag. default:false
+            </summary>
+        </member>
+        <member name="T:ClassLibrary.CommonLibrary">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ClassLibrary.CommonLibrary.LoadINI(System.String,System.String)">
+            <summary>
+            Get value from ini by Key. default filepath=settings.ini
+            20220426 Added: Skip comment line
+            </summary>
+            <param name="Key">Search Key</param>
+            <param name="FilePath">Location of settingfile @"\settings.ini"</param>
+            <returns>key-value or null</returns>
+        </member>
+        <member name="M:ClassLibrary.CommonLibrary.CastToGiga(System.Int64)">
+            <summary>
+            byte to KB,MB,GB
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClassLibrary.CommonLibrary.WriteLog(System.Int32,System.String)">
+            <summary>
+            write log to file
+            </summary>
+            <param name="level"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:ClassLibrary.CommonLibrary.Terminate(System.String)">
+            <summary>
+            terminate application
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:ClassLibrary.CommonLibrary.Terminate(System.String,System.Int32)">
+            <summary>
+            Terminate application with exitcode
+            </summary>
+            <param name="msg"></param>
+            <param name="exitcode"></param>
+        </member>
+        <member name="M:ClassLibrary.CommonLibrary.Terminate(System.Collections.ArrayList)">
+            <summary>
+            Terminate application with ArrayList
+            </summary>
+            <param name="al">Msg Array</param>
+        </member>
+        <member name="M:ClassLibrary.CommonLibrary.ExecuteShellReturnExitCode(System.String)">
+            <summary>
+            (대리)쉘을 실행하고 ExitCode를 리턴
+            </summary>
+            <param name="Args">실행명령어</param>
+            <returns>int ExitCode리턴</returns>
+        </member>
+        <member name="M:ClassLibrary.CommonLibrary.ExecuteShellRoutine(System.String,System.Int32@,System.String@)">
+            <summary>
+            실제로 명령어를 받아 실행
+            </summary>
+            <param name="Args">실행 명령어</param>
+            <param name="ExitCode">리턴int ExitCode</param>
+            <param name="ResultArray">리턴str ResultArray</param>
+        </member>
+        <member name="M:ClassLibrary.CommonLibrary.ExecuteShellReturnStringArray(System.String)">
+            <summary>
+            (대리)쉘을 실행하고 StringArray를 리턴
+            </summary>
+            <param name="Args">실행 명령어</param>
+            <returns>string[] 실행결과를 리턴</returns>
+        </member>
+        <member name="M:ClassLibrary.CommonLibrary.setPath(System.String)">
+            <summary>
+            set path
+            </summary>
+            <param name="UploadedPath">new version path</param>
+            <returns>0 no update, 1 updated, -1 error</returns>
+        </member>
+    </members>
+</doc>
