@@ -4,16 +4,16 @@ import pyautogui, win32gui,win32con,win32api
 #Input caption of console.
 handle=win32gui.FindWindow(None,"제목 없음 - Windows 메모장")
 #win32gui.PostMessage(handle,win32con.WM_CLOSE,0,0)
-print(handle)
+print("Handle: " + str(handle))
 edit = win32gui.GetDlgItem(handle, 0xF)
-
 
 size=pyautogui.size()
 
 win_x1,win_y1,win_x2,win_y2=win32gui.GetWindowRect(handle)
-print("size: " + str(size))
-print(str(win_x1) + "," + str(win_y1) + "," + str(win_x2) + "," + str(win_y2))
+print("Resolution: " + str(size))
+print("Target window position: " + str(win_x1) + "," + str(win_y1) + " ~ " + str(win_x2) + "," + str(win_y2))
 print("MousePosition Before: " + str(pyautogui.position()))
+
 pyautogui.moveTo(win_x1,win_y1)
 pyautogui.moveRel(100,100)
 print("MousePosition After: " + str(pyautogui.position()))
