@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindHandle", "FindHandle\FindHandle.csproj", "{A8E02D72-B18A-441F-A6AD-C7AD8D5C14FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8E02D72-B18A-441F-A6AD-C7AD8D5C14FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8E02D72-B18A-441F-A6AD-C7AD8D5C14FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8E02D72-B18A-441F-A6AD-C7AD8D5C14FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8E02D72-B18A-441F-A6AD-C7AD8D5C14FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {712E4975-ADEB-414B-B40B-D364186C90EC}
+	EndGlobalSection
+EndGlobal
