@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1972
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractDiffObjects", "ExtractDiffObjects\ExtractDiffObjects.csproj", "{7F15E0F0-2475-4EBE-960A-16ECC670365A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F15E0F0-2475-4EBE-960A-16ECC670365A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F15E0F0-2475-4EBE-960A-16ECC670365A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F15E0F0-2475-4EBE-960A-16ECC670365A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F15E0F0-2475-4EBE-960A-16ECC670365A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3F62172-009B-4F8A-AA18-2505372F34DC}
+	EndGlobalSection
+EndGlobal
