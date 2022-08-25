@@ -154,6 +154,18 @@ namespace ClassLibrary {
             Console.ForegroundColor = ConsoleColor.White;
         }
 
+
+
+        public Boolean CheckUpdate(string path) {
+            if (File.Exists(path)) {
+                return true;
+            }
+
+            return false;
+        }
+
+
+
         /// <summary>
         /// terminate application
         /// </summary>
