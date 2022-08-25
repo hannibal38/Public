@@ -156,13 +156,7 @@ namespace ClassLibrary {
 
 
 
-        public Boolean CheckUpdate(string path) {
-            if (File.Exists(path)) {
-                return true;
-            }
-
-            return false;
-        }
+        
 
 
 
@@ -315,9 +309,11 @@ namespace ClassLibrary {
             return 0;
         }
 
+
         /// <summary>
-        /// 
+        /// Check update available
         /// </summary>
+        /// <param name="AppName">Curruntly executing AppName for create batch</param>
         /// <returns></returns>
         public Boolean CheckUpdate(string AppName) {
             string NewVerPath = LoadINI("NewVersionPath");
@@ -347,7 +343,7 @@ namespace ClassLibrary {
                     }
                 }
                 else {
-                    WriteLog(2, "No file exist: " + NewVerPath);
+                    WriteLog(2, "Newversion path is not exist: " + NewVerPath);
                     return false;
                 }
                 return false;
@@ -355,6 +351,11 @@ namespace ClassLibrary {
             return false;
         }
 
+        /// <summary>
+        /// Create batch and execute update
+        /// </summary>
+        /// <param name="AppName">AppName</param>
+        /// <param name="NewVerPath">NewVersionPath</param>
         public void DoUpdate(string AppName,string NewVerPath) {
             string BatchPath = Directory.GetCurrentDirectory() + "\\" + "Update.bat";
             if (File.Exists(BatchPath))
