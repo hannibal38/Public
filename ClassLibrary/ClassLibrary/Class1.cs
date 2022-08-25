@@ -288,7 +288,7 @@ namespace ClassLibrary {
 
 
         
-        string UploadedPath = @"C:\Users\sehychoi\Downloads\7z2107-x64.exe";
+        //string UploadedPath = @"C:\Users\sehychoi\Downloads\7z2107-x64.exe";
         /// <summary>
         /// set path
         /// </summary>
@@ -301,6 +301,70 @@ namespace ClassLibrary {
             }
             Console.WriteLine(File.GetLastAccessTime(UploadedPath));
             return 0;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public Boolean CheckUpdate(string AppName) {
+            string NewVerPath = LoadINI("NewVersionPath");
+            if (NewVerPath != null) {
+                if (File.Exists(NewVerPath)) {
+                    FileInfo fi1;
+                    FileInfo fi2;
+
+                    //currently executing file's date
+                    try {
+                        fi1 = new FileInfo(Directory.GetCurrentDirectory() +"\\" + AppName + ".exe");
+                    } catch (Exception e){
+                        WriteLog(2, "Cannot get FileInfo: " + Directory.GetCurrentDirectory() + "\\" + AppName + ".exe");
+                        WriteLog(0, e.Message);
+                        return false;
+                    }
+                    //new version's date
+                    try {
+                        fi2 = new FileInfo(NewVerPath);
+                    } catch (Exception e) {
+                        WriteLog(2, "Cannot get FileInfo: " + Directory.GetCurrentDirectory() + "\\" + AppName + ".exe");
+                        WriteLog(0, e.Message);
+                        return false;
+                    }
+                    if (fi1.LastWriteTime != fi2.LastWriteTime) {
+                        DoUpdate(AppName, NewVerPath);
+                    }
+                }
+                else {
+                    WriteLog(2, "No file exist: " + NewVerPath);
+                    return false;
+                }
+                return false;
+            }
+            return false;
+        }
+
+        public void DoUpdate(string AppName,string NewVerPath) {
+            string BatchPath = Directory.GetCurrentDirectory() + "\\" + "Update.bat";
+            if (File.Exists(BatchPath))
+                File.Delete(BatchPath);
+                       
+            ArrayList Batch = new ArrayList();
+            Batch.Add("ping 8.8.8.8 2>nul");
+            Batch.Add("taskkill /f /im " + AppName);
+            Batch.Add("echo date time >> update.log");
+            Batch.Add("copy /y " + NewVerPath);
+            Batch.Add("ping 8.8.8.8 2>nul");
+            Batch.Add("start " + Directory.GetCurrentDirectory() + "\\" + AppName + ".exe");
+
+            StreamWriter sw = new StreamWriter(BatchPath);
+            {
+                foreach(string line in Batch) {
+                    sw.WriteLine(line + "\n");
+                }
+            }
+            sw.Close();
+
+            ExecuteShellReturnExitCode(BatchPath);
         }
       
     }

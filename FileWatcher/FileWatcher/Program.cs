@@ -30,6 +30,7 @@ namespace FileWatcher {
 
             string INIPath = "\\FileWatcher.ini";
 
+            lib.CheckUpdate("FileWatcher");
            
             string srcPath = lib.LoadINI("SourcePath", INIPath);
             
@@ -135,13 +136,18 @@ namespace FileWatcher {
             long BeforeFolderSize = 0;
             while (cnt <= 10) {
                 DirectoryInfo di = new DirectoryInfo(path);
-
-                long FolderSize=di.EnumerateFiles("*.*", SearchOption.AllDirectories).Sum(fi => fi.Length);
-                if(FolderSize > BeforeFolderSize) {
-                    BeforeFolderSize = FolderSize;
-                    cnt = 0;
-                } else {
-                    cnt++;
+                long FolderSize;
+                try {
+                    FolderSize=di.EnumerateFiles("*.*", SearchOption.AllDirectories).Sum(fi => fi.Length);
+                    if(FolderSize > BeforeFolderSize) {
+                        BeforeFolderSize = FolderSize;
+                        cnt = 0;
+                    } else {
+                        cnt++;
+                    }
+                }
+                catch (Exception e){
+                    Console.Write(" busy");
                 }
                 System.Threading.Thread.Sleep(1000);
                 Console.Write(" " + cnt);
