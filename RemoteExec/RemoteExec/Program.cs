@@ -8,8 +8,8 @@ namespace RemoteExec
 {
     class Program
     {
-        /* D:\SysinternalsSuite_20181210>psexec \\172.21.150.190 -nobanner cmd /c query session
-
+        /* D:\SysinternalsSuite_20181210>psexec \\172.21.150.190 -nobanner cmd /c query session | findstr Active
+        
  SESSIONNAME       USERNAME ID  STATE TYPE        DEVICE
 >services                                    0  Disc
  console                                     1  Conn
@@ -20,14 +20,17 @@ cmd exited on 172.21.150.190 with error code 1.
 
 D:\SysinternalsSuite_20181210>
 
-
-
-
-
-
+        */
 
 
         static void Main(string[] args) {
         }
+
+
+
+
+
+
+
     }
 }

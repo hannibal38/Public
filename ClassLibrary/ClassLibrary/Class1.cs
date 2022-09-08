@@ -310,42 +310,40 @@ namespace ClassLibrary {
         }
 
 
+
         /// <summary>
         /// Check update available
         /// </summary>
         /// <param name="AppName">Curruntly executing AppName for create batch</param>
+        /// <param name="NewVerPath">New version path</param>
         /// <returns></returns>
-        public Boolean CheckUpdate(string AppName) {
-            string NewVerPath = LoadINI("NewVersionPath");
-            if (NewVerPath != null) {
-                if (File.Exists(NewVerPath)) {
-                    FileInfo fi1;
-                    FileInfo fi2;
+        public Boolean CheckUpdate(string AppName, string NewVerPath) {   
+            if (File.Exists(NewVerPath)) {
+                FileInfo fi1;
+                FileInfo fi2;
 
-                    //currently executing file's date
-                    try {
-                        fi1 = new FileInfo(Directory.GetCurrentDirectory() +"\\" + AppName + ".exe");
-                    } catch (Exception e){
-                        WriteLog(2, "Cannot get FileInfo: " + Directory.GetCurrentDirectory() + "\\" + AppName + ".exe");
-                        WriteLog(0, e.Message);
-                        return false;
-                    }
-                    //new version's date
-                    try {
-                        fi2 = new FileInfo(NewVerPath);
-                    } catch (Exception e) {
-                        WriteLog(2, "Cannot get FileInfo: " + Directory.GetCurrentDirectory() + "\\" + AppName + ".exe");
-                        WriteLog(0, e.Message);
-                        return false;
-                    }
-                    if (fi1.LastWriteTime != fi2.LastWriteTime) {
-                        DoUpdate(AppName, NewVerPath);
-                    }
-                }
-                else {
-                    WriteLog(2, "Newversion path is not exist: " + NewVerPath);
+                //currently executing file's date
+                try {
+                    fi1 = new FileInfo(Directory.GetCurrentDirectory() +"\\" + AppName + ".exe");
+                } catch (Exception e){
+                    WriteLog(2, "Cannot get FileInfo: " + Directory.GetCurrentDirectory() + "\\" + AppName + ".exe");
+                    WriteLog(0, e.Message);
                     return false;
                 }
+                //new version's date
+                try {
+                    fi2 = new FileInfo(NewVerPath);
+                } catch (Exception e) {
+                    WriteLog(2, "Cannot get FileInfo: " + Directory.GetCurrentDirectory() + "\\" + AppName + ".exe");
+                    WriteLog(0, e.Message);
+                    return false;
+                }
+                if (fi1.LastWriteTime != fi2.LastWriteTime) {
+                    DoUpdate(AppName, NewVerPath);
+                }
+            }
+            else {
+                WriteLog(2, "Newversion path is not exist: " + NewVerPath);
                 return false;
             }
             return false;
