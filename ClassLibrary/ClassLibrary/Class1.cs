@@ -360,11 +360,16 @@ namespace ClassLibrary {
             if (File.Exists(BatchPath))
                 File.Delete(BatchPath);
                        
+            if (!Directory.Exists(Directory.GetCurrentDirectory() + @"\backup"))
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + @"\backup");
+
+            File.Copy(Directory.GetCurrentDirectory()+"*.ini",Directory.GetCurrentDirectory() + @"\backup\*.ini",true);
+                                       
             ArrayList Batch = new ArrayList();
             Batch.Add("ping 8.8.8.8 2>nul");
-            Batch.Add("taskkill /f /im " + AppName);
+            Batch.Add("taskkill /f /im " + AppName + ".exe");
             Batch.Add("echo date time >> update.log");
-            Batch.Add("copy /y " + NewVerPath);
+            Batch.Add("copy /y " + NewVerPath + Directory.GetCurrentDirectory());
             Batch.Add("ping 8.8.8.8 2>nul");
             Batch.Add("start " + Directory.GetCurrentDirectory() + "\\" + AppName + ".exe");
 
@@ -375,6 +380,7 @@ namespace ClassLibrary {
                 }
             }
             sw.Close();
+            File.Copy(Directory.GetCurrentDirectory() + @"\backup\*.ini",Directory.GetCurrentDirectory() + "*.ini",true);
 
             ExecuteShellReturnExitCode(BatchPath);
         }
