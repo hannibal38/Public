@@ -19,6 +19,10 @@ namespace RemoteExec
 
 
         static void Main(string[] args) {
+
+            ClassLibrary.CommonSetting.LogFilePath = string.Concat(Directory.GetCurrentDirectory(), "\\Log");
+            ClassLibrary.CommonSetting.DebugFlag = true;
+
             string PsExecPath = lib.LoadINI("PsExecPath", @"\RemoteExec.ini");
             if (PsExecPath == null)
                 lib.Terminate("No argument(PsExec)!!!");
@@ -31,19 +35,27 @@ namespace RemoteExec
                     lib.DoUpdate("RemoteExec", UpdatePath);
 
 
+            string[] Result = lib.ExecuteShellReturnStringArray(PsExecPath + " \\172.21.150.190 - nobanner cmd / c query session | findstr Active");
 
-
-
-
-
+            foreach (string str in Result)
+                Console.WriteLine(str);
 
 
         }
-
+        
 
         static ArrayList SplitSessionResult(string Result) {
+            ArrayList AL = new ArrayList();
 
+            return AL;
             
         }
+
+
+
+
+
+
+
     }
 }
