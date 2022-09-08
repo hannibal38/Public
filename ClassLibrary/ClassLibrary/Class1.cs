@@ -339,7 +339,8 @@ namespace ClassLibrary {
                     return false;
                 }
                 if (fi1.LastWriteTime != fi2.LastWriteTime) {
-                    DoUpdate(AppName, NewVerPath);
+                    WriteLog(1, "DoUpdate: " + fi1.LastAccessTime + " ===> " + fi2.LastAccessTime);
+                    return true;
                 }
             }
             else {
