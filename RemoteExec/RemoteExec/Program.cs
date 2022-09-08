@@ -37,6 +37,7 @@ namespace RemoteExec
 
             string[] Result = lib.ExecuteShellReturnStringArray(PsExecPath + " \\172.21.150.190 - nobanner cmd / c query session | findstr Active");
 
+            Console.WriteLine("Result Len: " + Result.Length);
             foreach (string str in Result)
                 Console.WriteLine(str);
 
