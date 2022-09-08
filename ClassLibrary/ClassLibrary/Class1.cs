@@ -63,8 +63,8 @@ namespace ClassLibrary {
                 WriteLog(2, "Loadini threw EX!!! args: " + Key + "\t(Filename:" + FilePath + ")");
                 WriteLog(0, e.Message);
             }
-
-            WriteLog(2, "Loadini arg Is Not determine! : " + Key + "\t(Filename:" + FilePath + ")");
+            // not determin don't console output
+            //WriteLog(2, "Loadini arg Is Not determine! : " + Key + "\t(Filename:" + FilePath + ")");
             return null;
         }
 
