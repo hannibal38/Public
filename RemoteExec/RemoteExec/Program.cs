@@ -23,11 +23,11 @@ namespace RemoteExec
             ClassLibrary.CommonSetting.LogFilePath = string.Concat(Directory.GetCurrentDirectory(), "\\Log");
             ClassLibrary.CommonSetting.DebugFlag = true;
 
-            string PsExecPath = lib.LoadINI("PsExecPath", @"\RemoteExec.ini");
-            if (PsExecPath == null)
-                lib.Terminate("No argument(PsExec)!!!");
-            if (!File.Exists(PsExecPath))
-                lib.Terminate("PsExec is not exist!!!");
+            //string PsExecPath = lib.LoadINI("PsExecPath", @"\RemoteExec.ini");
+            //if (PsExecPath == null)
+            //    lib.Terminate("No argument(PsExec)!!!");
+            //if (!File.Exists(PsExecPath))
+            //    lib.Terminate("PsExec is not exist!!!");
 
             string UpdatePath = lib.LoadINI("UpdatePath", @"\RemoteExec.ini");
             if (UpdatePath != null)
@@ -35,11 +35,11 @@ namespace RemoteExec
                     lib.DoUpdate("RemoteExec", UpdatePath);
 
 
-            string[] Result = lib.ExecuteShellReturnStringArray(PsExecPath + " \\172.21.150.190 - nobanner cmd / c query session | findstr Active");
+            //string[] Result = lib.ExecuteShellReturnStringArray(PsExecPath + " \\ - nobanner cmd / c query session | findstr Active");
 
-            Console.WriteLine("Result Len: " + Result.Length);
-            foreach (string str in Result)
-                Console.WriteLine(str);
+            //Console.WriteLine("Result Len: " + Result.Length);
+            //foreach (string str in Result)
+            //    Console.WriteLine(str);
 
 
         }

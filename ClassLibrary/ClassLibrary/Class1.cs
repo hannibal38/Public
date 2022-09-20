@@ -294,7 +294,7 @@ namespace ClassLibrary {
 
 
         
-        //string UploadedPath = @"C:\Users\sehychoi\Downloads\7z2107-x64.exe";
+        //string UploadedPath = @"C:\Users\Downloads\7z2107-x64.exe";
         /// <summary>
         /// set path
         /// </summary>
@@ -330,15 +330,17 @@ namespace ClassLibrary {
                     WriteLog(0, e.Message);
                     return false;
                 }
+
                 //new version's date
                 try {
                     fi2 = new FileInfo(NewVerPath);
                 } catch (Exception e) {
-                    WriteLog(2, "Cannot get FileInfo: " + Directory.GetCurrentDirectory() + "\\" + AppName + ".exe");
+                    WriteLog(2, "Cannot get FileInfo: " + NewVerPath);
                     WriteLog(0, e.Message);
                     return false;
                 }
-                if (fi1.LastWriteTime != fi2.LastWriteTime) {
+
+                if (fi1.LastAccessTime != fi2.LastAccessTime) {
                     WriteLog(1, "DoUpdate: " + fi1.LastAccessTime + " ===> " + fi2.LastAccessTime);
                     return true;
                 }
@@ -356,14 +358,19 @@ namespace ClassLibrary {
         /// <param name="AppName">AppName</param>
         /// <param name="NewVerPath">NewVersionPath</param>
         public void DoUpdate(string AppName,string NewVerPath) {
-            string BatchPath = Directory.GetCurrentDirectory() + "\\" + "Update.bat";
+            string BatchPath = Directory.GetCurrentDirectory() + @"\Update.bat";
             if (File.Exists(BatchPath))
                 File.Delete(BatchPath);
                        
             if (!Directory.Exists(Directory.GetCurrentDirectory() + @"\backup"))
                 Directory.CreateDirectory(Directory.GetCurrentDirectory() + @"\backup");
 
-            File.Copy(Directory.GetCurrentDirectory()+"*.ini",Directory.GetCurrentDirectory() + @"\backup\*.ini",true);
+
+
+            Console.WriteLine(Directory.GetCurrentDirectory() + @"*.ini");
+            Console.WriteLine(Directory.GetCurrentDirectory() + @"\backup\*.ini");
+
+            File.Copy(Directory.GetCurrentDirectory()+@"*.ini",Directory.GetCurrentDirectory() + @"\backup\*.ini",true);
                                        
             ArrayList Batch = new ArrayList();
             Batch.Add("ping 8.8.8.8 2>nul");
