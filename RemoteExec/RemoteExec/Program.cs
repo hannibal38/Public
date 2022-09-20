@@ -9,12 +9,7 @@ namespace RemoteExec
 {
     class Program
     {
-    /* D:\SysinternalsSuite_20181210>psexec \\172.21.150.190 -nobanner cmd /c query session | findstr Active
-    Starting cmd on 172.21.150.190... 172.21.150.190...
-     rdp-tcp#2         muoadmin_tg               3  Active
-    cmd exited on 172.21.150.190 with error code 1.
-    */
-
+    
         static ClassLibrary.CommonLibrary lib = new ClassLibrary.CommonLibrary();
 
 
