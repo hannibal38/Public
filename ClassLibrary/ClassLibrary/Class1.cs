@@ -124,8 +124,12 @@ namespace ClassLibrary {
 
             Console.WriteLine(DateTime.Now.ToString("HH:mm:ss") + "\t" + LogLevel + "\t" + message);
 
-            if (Directory.Exists(LogFilePath) == false) {
-                Directory.CreateDirectory(LogFilePath);
+            if (LogFilePath != null) {
+                if (Directory.Exists(LogFilePath) == false) {
+                    Directory.CreateDirectory(LogFilePath);
+                }
+            } else {
+                LogFilePath = Directory.GetCurrentDirectory();
             }
             //Append로 파일을 열면 필요없음
             //if(File.Exists(LogFilePath + "\\" + DateTime.Now.ToString("yyyyMMdd") + ".log") == false) {
@@ -247,24 +251,27 @@ namespace ClassLibrary {
             (string Args, out int ExitCode, out string ResultArray) {
             Boolean DebugFlag = CommonSetting.DebugFlag;
             System.Diagnostics.Process p = new System.Diagnostics.Process();
+            ResultArray = null;
 
             p.StartInfo.FileName = System.Environment.GetEnvironmentVariable("ComSpec");
             p.StartInfo.UseShellExecute = false;
             p.StartInfo.RedirectStandardOutput = true;
             p.StartInfo.RedirectStandardInput = false;
-            p.StartInfo.CreateNoWindow = true;
-            p.StartInfo.Arguments = @"/c " + Args;
+            //p.StartInfo.CreateNoWindow = true;
+            p.StartInfo.Arguments = @" /c " + Args;
             if (DebugFlag == true)
                 WriteLog(0, "Execute args: " + p.StartInfo.Arguments);
             try {
                 p.Start();
+                Console.WriteLine("pid: " + p.Id);
+                ResultArray = p.StandardOutput.ReadToEnd();
             }
             catch {
                 Console.WriteLine("Exception threw!!!");
                 Console.WriteLine("args: " + Args);
                 ExitCode = -1;
             }
-            ResultArray = p.StandardOutput.ReadToEnd();
+            
             if (DebugFlag == true)
                 WriteLog(0, "Output: " + ResultArray);
 
@@ -274,7 +281,7 @@ namespace ClassLibrary {
             p.Close();
 
         }
-
+        //TODO: Classlib.dll도 갱신필요
         /// <summary>
         /// (대리)쉘을 실행하고 StringArray를 리턴
         /// </summary>
@@ -305,7 +312,7 @@ namespace ClassLibrary {
                 Console.WriteLine("File is not exist: " + UploadedPath);
                 return -1;
             }
-            Console.WriteLine(File.GetLastAccessTime(UploadedPath));
+            Console.WriteLine(File.GetLastWriteTime(UploadedPath));
             return 0;
         }
 
@@ -319,6 +326,7 @@ namespace ClassLibrary {
         /// <returns></returns>
         public Boolean CheckUpdate(string AppName, string NewVerPath) {   
             if (File.Exists(NewVerPath)) {
+                
                 FileInfo fi1;
                 FileInfo fi2;
 
@@ -330,7 +338,7 @@ namespace ClassLibrary {
                     WriteLog(0, e.Message);
                     return false;
                 }
-
+                
                 //new version's date
                 try {
                     fi2 = new FileInfo(NewVerPath);
@@ -340,9 +348,24 @@ namespace ClassLibrary {
                     return false;
                 }
 
-                if (fi1.LastAccessTime != fi2.LastAccessTime) {
-                    WriteLog(1, "DoUpdate: " + fi1.LastAccessTime + " ===> " + fi2.LastAccessTime);
-                    return true;
+                if (fi1.LastWriteTime!= fi2.LastWriteTime) {
+                    WriteLog(1, "DoUpdate: " + fi1.LastWriteTime+ " ===> " + fi2.LastWriteTime);
+                    DateTime f1t = fi1.LastAccessTime;
+                    DateTime f2t = fi2.LastAccessTime;
+                    TimeSpan ts = f2t - f1t;
+                    if (ts.TotalSeconds < 0) {
+                        Console.WriteLine("NewPath is older than current version. Update? Y or any key");
+                        string answer = Console.ReadLine();
+                        if(answer=="Y" || answer == "y") {
+                            return true;
+                        }
+                        else {
+                            return false;
+                        }
+                    }
+                    else {
+                        return true;
+                    }
                 }
             }
             else {
@@ -361,33 +384,26 @@ namespace ClassLibrary {
             string BatchPath = Directory.GetCurrentDirectory() + @"\Update.bat";
             if (File.Exists(BatchPath))
                 File.Delete(BatchPath);
-                       
-            if (!Directory.Exists(Directory.GetCurrentDirectory() + @"\backup"))
-                Directory.CreateDirectory(Directory.GetCurrentDirectory() + @"\backup");
-
-
-
-            Console.WriteLine(Directory.GetCurrentDirectory() + @"*.ini");
-            Console.WriteLine(Directory.GetCurrentDirectory() + @"\backup\*.ini");
-
-            File.Copy(Directory.GetCurrentDirectory()+@"*.ini",Directory.GetCurrentDirectory() + @"\backup\*.ini",true);
-                                       
+                                  
             ArrayList Batch = new ArrayList();
-            Batch.Add("ping 8.8.8.8 2>nul");
             Batch.Add("taskkill /f /im " + AppName + ".exe");
-            Batch.Add("echo date time >> update.log");
-            Batch.Add("copy /y " + NewVerPath + Directory.GetCurrentDirectory());
-            Batch.Add("ping 8.8.8.8 2>nul");
-            Batch.Add("start " + Directory.GetCurrentDirectory() + "\\" + AppName + ".exe");
+            Batch.Add("timeout /t 3");
+            Batch.Add("echo Before:");
+            Batch.Add("echo %date% %time% >> update.log");
+            Batch.Add("dir " + AppName + ".exe | findstr " + AppName + ".exe >> update.log");
+            Batch.Add("echo Updated:");
+            Batch.Add("copy /y " + NewVerPath + " " + Directory.GetCurrentDirectory() +"\\");
+            Batch.Add("timeout /t 3");
+            Batch.Add("dir " + AppName + ".exe | findstr " + AppName + ".exe >> update.log");
+            //Batch.Add("start " + Directory.GetCurrentDirectory() + "\\" + AppName + ".exe");
 
             StreamWriter sw = new StreamWriter(BatchPath);
             {
                 foreach(string line in Batch) {
-                    sw.WriteLine(line + "\n");
+                    sw.WriteLine(line);
                 }
             }
             sw.Close();
-            File.Copy(Directory.GetCurrentDirectory() + @"\backup\*.ini",Directory.GetCurrentDirectory() + "*.ini",true);
 
             ExecuteShellReturnExitCode(BatchPath);
         }

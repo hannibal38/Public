@@ -55,6 +55,7 @@ namespace ProcMon
             int ServerListLength = ServerList.Length / ServerList.Rank;
 
             string ProcessName = lib.LoadINI("processname", "\\Procmon.ini");
+            string PortNo = lib.LoadINI("portno", "\\Procmon.ini");
             string Mailto = lib.LoadINI("Mailto", "\\Procmon.ini");
             if (Mailto == null) {
                 lib.Terminate("MailTo is not assigned!!!");
