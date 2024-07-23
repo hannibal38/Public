@@ -13,7 +13,7 @@ using System.Linq;
 
 
 namespace FileWatcher {
-    class Program {
+    class FileWatcher {
 
         static ClassLibrary.CommonLibrary lib = new ClassLibrary.CommonLibrary();
         
